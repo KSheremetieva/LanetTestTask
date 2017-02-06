@@ -24,7 +24,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="item in openUs.experience">
+            <tr ng-repeat="item in openUs.experience track by $index">
               <th>{{$index+1}}</th>
               <td>{{item}}</td>
               <td>

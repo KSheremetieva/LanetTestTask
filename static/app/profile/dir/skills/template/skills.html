@@ -22,7 +22,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="item in openUs.skills">
+            <tr ng-repeat="item in openUs.skills track by $index">
               <th>{{$index+1}}</th>
               <td>{{item}}</td>
               <td>
