@@ -1,0 +1,42 @@
+<!-- <h1>{{experiense}}</h1> -->
+
+<div class="container marketing" id="experience">
+	<!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading" style="margin-top:0">Experience <span style="display:inline-block;">
+            <form action="">
+            <div class="input-group">
+            <input ng-model="newExp" id="msg" type="text" class="form-control" name="msg" placeholder="Add new skill">
+            <span ng-click="addExp(newExp)" class="input-group-addon glyphicon glyphicon-plus addSkillBtn" style="position:relative; top:0;"> </span>
+          </div>
+          </form>
+          </span> </h2>
+          <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Experience</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in openUs.experience">
+              <th>{{$index+1}}</th>
+              <td>{{item}}</td>
+              <td>
+                <button class="btn btn-warning" ng-click="removeExp(item)"><span class="glyphicon glyphicon-remove"></span></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <hr class="featurette-divider">
+
+</div>
+</div>

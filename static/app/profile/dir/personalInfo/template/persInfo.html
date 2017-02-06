@@ -1,0 +1,60 @@
+<div class="container marketing" ng-init="reload()">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-4" style="text-align: center">
+          <img class="img-circle" src="{{openUs.imgLink}}" alt="Generic placeholder image" width="240" height="240">
+        </div><!-- /.col-lg-4 -->
+        <div class="col-xs-12 col-sm-8 mainPersInfo">
+
+          <h2 class="col-xs-offset-1">Personal Information</h2>
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-user"></span> 
+            <a href="" editable-text="openUs.name" e-required>
+             &nbsp; {{ openUs.name || openUsName}}
+            </a>
+          </div>
+
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-hand-right"></span> 
+            <a href="" editable-text="openUs.age" e-required>
+             &nbsp; {{ openUs.age || 'no age' }}
+            </a>
+          </div>
+
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-envelope"></span> 
+            <a href="" editable-text="openUs.email" e-required>
+             &nbsp; {{ openUs.email }}
+            </a>
+          </div>
+
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-eye-close"></span> 
+            <a href="" editable-text="openUs.pass" e-required>
+             &nbsp; {{ openUs.pass }}
+            </a>
+          </div>
+
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-globe"></span> 
+            <a href="" editable-text="openUs.country">
+             &nbsp; {{ openUs.country}}
+            </a>
+          </div>
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-map-marker"></span> 
+            <a href="" editable-text="openUs.state">
+             &nbsp; {{ openUs.state}}
+            </a>
+          </div>
+          <div class="col-xs-offset-1 col-xs-12">
+            <span class="persIcon glyphicon glyphicon-education"></span> 
+            <a href="" editable-text="openUs.education">
+             &nbsp; {{ openUs.education || 'no education' }}
+            </a>
+          </div>
+          <!-- col-xs-offset-1 -->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>

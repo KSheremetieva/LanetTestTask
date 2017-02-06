@@ -1,0 +1,37 @@
+<div class="container marketing" id="skills">
+<!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-12" id="#about">
+          <h2 class="featurette-heading" style="margin-top:0">Skills  <span style="display:inline-block;">
+            <form action="">
+            <div class="input-group">
+            <input ng-model="newSkill" id="msg" type="text" class="form-control" name="msg" placeholder="Add new skill">
+            <span ng-click="addSkill(newSkill)" class="input-group-addon glyphicon glyphicon-plus addSkillBtn" style="position:relative; top:0;"> </span>
+          </div>
+          </form>
+          </span> </h2>
+          <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Skill</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in openUs.skills">
+              <th>{{$index+1}}</th>
+              <td>{{item}}</td>
+              <td>
+                <button class="btn btn-warning" ng-click="removeSkill(item)"><span class="glyphicon glyphicon-remove"> </span></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+</div>
